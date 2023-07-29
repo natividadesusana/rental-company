@@ -1,4 +1,5 @@
 # Rental Service
+
 This is a rental service project that allows users to rent movies from a movie library. The project includes various functionalities to handle rentals, ensuring business rules are followed. The system checks and enforces several limitations before allowing a rental to be created.
 
 ## Business Rules
@@ -50,3 +51,5 @@ The project utilizes the following libraries:
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and create a pull request with your changes.
+
+
