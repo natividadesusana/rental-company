@@ -24,8 +24,6 @@ function getRentalsByUserId(userId: number, closed = true) {
   })
 }
 
-// FIXME: Esta é uma operação onde faria sentido o uso de TRANSACTIONS.
-// Caso esteja curioso(a), procure saber o que é e tente implementar aqui!
 async function createRental(rentalInput: RentalInput) {
   const rental = await prisma.rental.create({
     data: {
@@ -38,8 +36,6 @@ async function createRental(rentalInput: RentalInput) {
   return await connectMoviesToRental(moviesId, rental.id);
 }
 
-// FIXME: Esta é uma operação onde faria sentido o uso de TRANSACTIONS.
-// Caso esteja curioso(a), procure saber o que é e tente implementar aqui!
 async function finishRental(id: number) {
   await disconnectMoviesFromRental(id);
   await prisma.rental.update({
